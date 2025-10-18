@@ -1,18 +1,34 @@
-# React + Vite
+# 🕹️ Pokédex de Usuarios — React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web desarrollada en **React con Vite**, que muestra usuarios en un diseño inspirado en la **Pokédex clásica de Pokémon**.  
+Cada usuario se representa como si fuera un Pokémon dentro de una tarjeta animada, con un estilo retro y colores característicos de la saga.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Características principales
 
-## React Compiler
+- 🌈 **Interfaz tipo Pokédex** con fondo rojo, pantallas verdes y tipografía estilo retro (Press Start 2P).  
+- 🧑‍💻 **Conexión a una API externa** (servidor Express) para obtener la lista de usuarios.  
+- 🖼️ Muestra **imagen, nombre, edad, correo y ciudad** de cada usuario.  
+- ⚡ Animaciones suaves al pasar el mouse sobre las tarjetas.  
+- 🎨 Diseño completamente **centrado y adaptable**, tanto en escritorio como en pantallas pequeñas.  
+- 💾 Código estructurado con **Vite**, para un desarrollo rápido y con actualización en tiempo real (HMR).
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🧩 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+| Tecnología | Descripción |
+|-------------|--------------|
+| **React** | Biblioteca de JavaScript para crear interfaces interactivas. |
+| **Vite** | Entorno de desarrollo rápido para proyectos modernos. |
+| **Axios** | Cliente HTTP usado para consumir la API de usuarios. |
+| **CSS3** | Estilización con temática Pokédex (fondos, bordes y tipografía). |
+| **Google Fonts** | Fuente “Press Start 2P” para un toque retro. |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧠 Funcionamiento general
+
+1. El frontend (esta app React) se conecta a una **API creada en Express (puerto 3000)**.  
+2. Obtiene los datos de usuarios desde el endpoint:
